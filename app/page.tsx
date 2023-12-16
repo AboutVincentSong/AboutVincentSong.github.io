@@ -7,7 +7,7 @@ export default function Home() {
   return (
       <div className='navbar' style={{ padding: '22px'}}>
         <a className="navbar-link" href="" style={{ fontSize: '20px', textDecoration: 'none', color: 'inherit'}}>
-          <i className="bi bi-code-slash"></i> Vincent Song
+          <i className="bi bi-code-square"></i> Vincent Song
         </a>
       </div>
   )
