@@ -5,8 +5,8 @@ import './globals.css'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Vincent\'s Professional Portfolio',
-  description: 'Vincent Song\'s Professional Portfolio',
+  title: 'Vincent Song',
+  description: 'Vincent Song\'s Portfolio',
 }
 
 export default function RootLayout({

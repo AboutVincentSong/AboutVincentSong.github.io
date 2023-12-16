@@ -5,10 +5,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home() {
   return (
-      <div className="container">
-        <br></br>
-        <a href="" style={{ fontSize: '20px', textDecoration: 'none', color: 'inherit', marginTop: '5px' }}>
-          <i className="bi bi-code-square"></i> Vincent Song
+      <div className='navbar' style={{ padding: '22px'}}>
+        <a className="navbar-link" href="" style={{ fontSize: '20px', textDecoration: 'none', color: 'inherit'}}>
+          <i className="bi bi-code-slash"></i> Vincent Song
         </a>
       </div>
   )
