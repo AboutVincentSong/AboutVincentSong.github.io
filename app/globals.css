@@ -59,3 +59,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (max-width: 464px) {
+  .tablet-phone {
+    display: inline-block; 
+  }
+  .web {
+    display: none; 
+  }
+}
+
+@media (min-width: 464px) {
+  .tablet-phone {
+    display: none; 
+  }
+  .web {
+    display: inline-block;
+  }
+}
