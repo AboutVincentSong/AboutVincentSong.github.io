@@ -8,7 +8,7 @@ const ThemeToggler = () => {
   const {theme, setTheme } = useTheme();  
   return (
     <div>
-      <Button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <Button variant='outline' size='icon' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {/* Bootstrap icons */}
         {theme === 'dark' ? (
           <svg style={{color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">

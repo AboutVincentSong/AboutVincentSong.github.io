@@ -77,3 +77,11 @@
     display: inline-block;
   }
 }
+
+.h1 {
+  @apply text-4xl xl:text-[65px] xl:leading-[80px] tracking-[-2px] font-bold;
+}
+
+.subtitle {
+  @apply text-muted-foreground text-lg mb-8 font-light;
+}
