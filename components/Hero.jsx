@@ -15,12 +15,12 @@ import Socials from './Socials';
 
 const Hero = () => {
   return (
-    <section style={{paddingTop: '20px'}}className='py-16 xl:py-23 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
+    <section style={{paddingTop: '20px'}}className='py-16 xl:py-24 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
         <div className='container mx-auto'>
             <div className='flex justify-between gap-x-8'>
                 <div className='flex max-w-[600px] flex-col justify-center mx-auto  text-center'>
                     <div className='text-sm uppercase font-semibold mb-2 text-primary tracking-[4px]'>Software Developer</div>
-                    <h1 className='h1 mb-3'>👋Hello, my name is Vincent Song</h1>
+                    <h1 className='h1 mb-3'>👋 Hello, my name is Vincent Song</h1>
                     <div className='flex relative items-center justify-center mb-2'>
                         <DevImg containerStyles="w-[150px] h-[150px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden" imgSrc='/hero/developer.png'/>
                     </div>
@@ -43,7 +43,7 @@ const Hero = () => {
                     />
                 </div>
             </div>
-            <div className='hidden md:flex absolute left-2/4 bottom-20 xl:bottom-12 animate-bounce'>
+            <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
                 <RiArrowDownSLine className='text-3xl text-primary' />
             </div>
         </div>
