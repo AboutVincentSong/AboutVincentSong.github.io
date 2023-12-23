@@ -1,8 +1,29 @@
-import React from 'react'
+'use client'
 
-const Socials = () => {
+import {RiLinkedinFill, RiGithubFill} from 'react-icons/ri';
+
+import Link from 'next/link';
+
+const icons = [
+  {
+    path: '/',
+    name: <RiLinkedinFill />
+  },
+  {
+    path: '/',
+    name: <RiGithubFill />
+  }
+]
+
+const Socials = ({containerStyles, iconsStyles}) => {
   return (
-    <div>Socials</div>
+    <div className={`${containerStyles}`}>
+      {icons.map((icon, index)=> {
+        return <Link href={icon.path} key={index}>
+          <div style={{fontSize: '30px'}} className={`${iconsStyles}`}>{icon.name}</div>
+        </Link>
+      })}
+    </div>
   )
 }
 
