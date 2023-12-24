@@ -22,7 +22,7 @@ const Hero = () => {
                     <div className='text-sm uppercase font-semibold mb-2 text-primary tracking-[4px]'>Software Developer</div>
                     <h1 className='h1 mb-3'>👋 Hello, my name is Vincent Song</h1>
                     <div className='flex relative items-center justify-center mb-2'>
-                        <DevImg containerStyles="w-[150px] h-[150px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden" imgSrc='/hero/developer.png'/>
+                        <DevImg containerStyles="w-[175px] h-[175px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden" imgSrc='/hero/developer.png'/>
                     </div>
                     <p className='subtitle max-w-[490px] mx-auto'>I am a driven third-year computer science student at the University of Virginia's School of Engineering.</p>
                     <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto mb-4'>
