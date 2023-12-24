@@ -79,7 +79,7 @@
 }
 
 .h1 {
-  @apply text-4xl xl:text-[56px] xl:leading-[60px] tracking-[-2px] font-bold;
+  @apply text-4xl xl:text-[56px] xl:leading-[48px] tracking-[-2px] font-bold;
 }
 
 .subtitle {

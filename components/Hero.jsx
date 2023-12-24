@@ -20,7 +20,8 @@ const Hero = () => {
             <div className='flex justify-between gap-x-8'>
                 <div className='flex max-w-[600px] flex-col justify-center mx-auto  text-center'>
                     <div className='text-sm uppercase font-semibold mb-2 text-primary tracking-[4px]'>Software Developer</div>
-                    <h1 className='h1 mb-3'>👋 Hello, my name is Vincent Song</h1>
+                    <h1 className='h1'>👋 Hello, my name is</h1>
+                    <h1 className='h1 mb-3'>Vincent Song</h1>
                     <div className='flex relative items-center justify-center mb-2'>
                         <DevImg containerStyles="w-[175px] h-[175px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden" imgSrc='/hero/developer.png'/>
                     </div>
@@ -38,7 +39,7 @@ const Hero = () => {
                         </Link>
                         </div>
                     <Socials 
-                        containerStyles='flex gap-x-6 mx-auto mb-3'
+                        containerStyles='flex gap-x-6 mx-auto mb-1'
                         iconsStyles='text-foreground hover:text-primary transition-all'
                     />
                 </div>
