@@ -79,9 +79,13 @@
 }
 
 .h1 {
-  @apply text-4xl xl:text-[47px] xl:leading-[60px] tracking-[-2px] font-bold;
+  @apply text-4xl xl:text-[56px] xl:leading-[60px] tracking-[-2px] font-bold;
 }
 
 .subtitle {
   @apply text-muted-foreground text-lg mb-4 font-light;
+}
+
+.section-title {
+  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 
 }
