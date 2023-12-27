@@ -79,16 +79,16 @@ const skillData = [
         title: 'skills',
         data: [
             {
-                name: 'HTML, CSS',
+                name: 'Programming Languages:',
+                list: 'Java, Python, C#, C++, JavaScript, TypeScript, PHP, HTML, CSS, SQL, Bash, Go, R, MATLAB',
             },
             {
-                name: 'Front-end Development',
+                name: 'Tools:',
+                list: 'Microsoft Office, Git, PostgreSQL, Docker, Heroku, AWS, Azure, Google Cloud Platform, Selenium',
             },
             {
-                name: 'Javascript, PHP',
-            },
-            {
-                name: 'Back-end Development',
+                name: 'Frameworks:',
+                list: 'Django, .NET Core, React, Next.js, Flask, Ruby on Rails, JUnit 5, Bootstrap, TailwindCSS',
             },
         ],
     },
@@ -96,16 +96,10 @@ const skillData = [
         title: 'tools',
         data: [
             {
-                imgPath: '/about/vscode.svg',
+                imgPath: '/about/AWS-CCP.png',
             },
             {
-                imgPath: '/about/figma.svg',
-            },
-            {
-                imgPath: '/about/notion.svg',
-            },
-            {
-                imgPath: '/about/wordpress.svg',
+                imgPath: '/about/AZ-900.png',
             },
         ],
     }
@@ -203,7 +197,39 @@ const About = () => {
                                         </div>
                                     </div>
                                 </TabsContent>
-                                <TabsContent value='skills'>skills info</TabsContent>
+                                <TabsContent value='skills'>
+                                    <div className="text-center">
+                                        <div className="mb-4">
+                                            <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                                            <div className="border-b border-border mb-4"></div>
+                                            <div>
+                                                {getData(skillData, 'skills').data.map(
+                                                    (item, index)=> {
+                                                        const {name, list} = item;
+                                                        return (
+                                                            <div className="w-2/4 text-center mx-auto" key={index}>
+                                                                <div className="font-medium">{name}</div>
+                                                                <div className="font-small">{list}</div>
+                                                                <br></br>
+                                                            </div>
+                                                        )
+                                                })}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-xl font-semibold mb-2">Certifications</h4>
+                                            <div className="border-b border-border mb-4"></div>
+                                            <div className="flex gap-x-8 justify-center">
+                                                {getData(skillData, 'tools').data.map((item, index)=> {
+                                                    const {imgPath} = item;
+                                                    return <div key={index}>
+                                                        <Image src={imgPath} width={100} height={100} alt='' priority/>
+                                                    </div>
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </TabsContent>
                             </div>
                         </Tabs>
                     </div>
