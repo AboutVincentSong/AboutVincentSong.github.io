@@ -32,7 +32,7 @@ const Hero = () => {
                                 Contact Me <Send size={18}/>
                             </Button>
                         </Link>
-                        <Link href='/contact'>
+                        <Link href='/files/Vincent Song Resume.pdf' target="_blank">
                             <Button variant='secondary' className='gap-x-2'>
                                 My Resume <FileText size={18}/>
                             </Button>
