@@ -1,5 +1,6 @@
 import DevImage from "./DevImg";
 import Image from "next/image";
+import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import { User2, MailIcon, PhoneCall, GraduationCap, MapPin, Briefcase, ChevronRightCircle, } from 'lucide-react';
@@ -93,13 +94,15 @@ const skillData = [
         ],
     },
     {
-        title: 'tools',
+        title: 'certs',
         data: [
             {
                 imgPath: '/about/AWS-CCP.png',
+                url: 'https://www.credly.com/badges/449a81b6-2891-433d-a9e9-caa7a0d11f47/public_url',
             },
             {
                 imgPath: '/about/AZ-900.png',
+                url: 'https://www.credly.com/badges/20d279df-9a1a-4b55-9374-4bce492815d1',
             },
         ],
     }
@@ -220,11 +223,19 @@ const About = () => {
                                             <h4 className="text-xl font-semibold mb-2">Certifications</h4>
                                             <div className="border-b border-border mb-4"></div>
                                             <div className="flex gap-x-8 justify-center">
-                                                {getData(skillData, 'tools').data.map((item, index)=> {
-                                                    const {imgPath} = item;
-                                                    return <div key={index}>
-                                                        <Image src={imgPath} width={100} height={100} alt='' priority/>
-                                                    </div>
+                                                {getData(skillData, 'certs').data.map((item, index)=> {
+                                                    const { imgPath, url } = item;
+                                                    return (
+                                                      <div key={index}>
+                                                        {url ? (
+                                                          <a href={url} target='_blank' rel='noopener noreferrer'>
+                                                            <Image src={imgPath} width={100} height={100} alt='' priority />
+                                                          </a>
+                                                        ) : (
+                                                          <Image src={imgPath} width={100} height={100} alt='' priority />
+                                                        )}
+                                                      </div>
+                                                    )
                                                 })}
                                             </div>
                                         </div>
