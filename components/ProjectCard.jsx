@@ -8,8 +8,8 @@ export const ProjectCard = ({ project }) => {
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
-        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 ">
-          <Image className="absolute bottom-0 shadow-2xl" src={project.image} width={440} height={200} alt='' priority />
+        <div className="relative  lg:h-[300px] md:h-[250px] h-[200px]  flex items-center justify-center bg-tertiary dark:bg-secondary/40 ">
+          <Image className="absolute bottom-0 shadow-lg" src={project.image} width={440} height={200} alt='' priority />
           <div className="flex gap-x-4">
             {project.link !== '' ? (
               <Link href={project.link} className="bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200" target="_blank">
