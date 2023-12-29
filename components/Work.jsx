@@ -61,7 +61,7 @@ const Work = () => {
                     <Button>All projects</Button>
                 </Link>
             </div>
-            <div className="xl:max-w-[1000px] xl:absolute right-5 top-0">
+            <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
                 <Swiper 
                     className={`h-[480px] ${theme === 'dark' ? 'dark-slider-bullets' : ''}`}
                     slidesPerView={1} 
