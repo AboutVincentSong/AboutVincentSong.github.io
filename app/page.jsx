@@ -10,7 +10,14 @@ export default function Home() {
     <main>
       <Hero />
       <About />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Services />
+      <br></br>
+      <br></br>
+      <br></br>
       <Work />
     </main>
   )
