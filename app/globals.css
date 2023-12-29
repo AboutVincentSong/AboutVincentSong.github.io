@@ -89,3 +89,7 @@
 .section-title {
   @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 
 }
+
+.dark-slider-bullets .swiper-pagination-bullet {
+  background-color: white;
+}
