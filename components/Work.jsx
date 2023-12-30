@@ -27,7 +27,7 @@ const projectData = [
         image: '/work/tourGuide.png',
         category: 'Full-Stack',
         name: 'UVA Tour Guide App',
-        description: 'Implemented the Google Login/Maps API with Python and JavaScript to provide roughly 4,000 first year students with access to location information around grounds',
+        description: 'Implemented the Google Login/Maps API with Python and JavaScript to provide roughly 4,000 first year students with access to location information around grounds.',
         link: 'https://project-a-03-4b98fe94a410.herokuapp.com/',
         github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
     },

@@ -93,3 +93,7 @@
 .dark-slider-bullets .swiper-pagination-bullet {
   background-color: white;
 }
+
+.white-logo {
+  filter: invert(100%)
+}
