@@ -14,12 +14,12 @@ const Contact = () => {
     {
       title: 'Phone Number',
       link: 'tel:+15712964933',
-      icon: '📞', // Add an appropriate icon for Phone Number
+      icon: '📞', 
     },
     {
       title: 'LinkedIn',
       link: 'https://www.linkedin.com/in/vincentsong/',
-      icon: '🔗', // Add an appropriate icon for LinkedIn
+      icon: '🔗', 
       target: '_blank',
     },
     {
@@ -31,8 +31,7 @@ const Contact = () => {
   ];
 
    const handleClick = (event) => {
-    event.preventDefault(); // Prevents the default behavior of the anchor tag
-    // Add any other logic you want to perform
+    event.preventDefault(); 
   };
 
   return (
@@ -62,7 +61,7 @@ const Contact = () => {
                 <a
                   href={item.link}
                   className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
-                  target={item.target || '_blank'} // Set target to _blank if target doesn't exist
+                  target={item.target || '_blank'} 
                   rel="noopener noreferrer"
                 >
                   <span className="text-xl">{item.icon}</span>
