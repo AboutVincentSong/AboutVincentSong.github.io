@@ -23,7 +23,7 @@ const Services = () => {
   return (
     <section className='mb-12'>
         <div className='container mx-auto'>
-            <h2 className='section-title mb-12 text-center mx-auto'><ChevronRightCircle /> Additional Info</h2>
+            <h2 className='section-title mb-12 text-center mx-auto'><ChevronRightCircle /> Additional Information</h2>
             <div className='grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8'>
                 {servicesData.map((item, index) => {
                     return <Card className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative' key={index}>
