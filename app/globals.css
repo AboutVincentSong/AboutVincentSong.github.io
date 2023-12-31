@@ -101,3 +101,11 @@
 .white-text {
   color: white;
 }
+
+.white-text:hover{
+  color: hsl(var(--primary));
+}
+
+.blue-text:hover{
+  color: hsl(var(--primary));
+}

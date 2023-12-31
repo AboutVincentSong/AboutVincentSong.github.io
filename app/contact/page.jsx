@@ -52,7 +52,7 @@ const Contact = () => {
             >
               {item.title === 'Phone Number' ? (
                 <a href={item.link}
-                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
+                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 blue-text"
                   rel="noopener noreferrer"
                   style={{pointerEvents: 'hover'}}
                   onClick={handleClick}
@@ -63,7 +63,7 @@ const Contact = () => {
               ) : (
                 <a
                   href={item.link}
-                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
+                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 blue-text"
                   target={item.target || '_blank'} 
                   rel="noopener noreferrer"
                 >
