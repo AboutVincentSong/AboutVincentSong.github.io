@@ -10,12 +10,15 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <br></br>
+      <br></br>
       <About />
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <Services />
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
