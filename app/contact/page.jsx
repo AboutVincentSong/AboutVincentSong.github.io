@@ -5,23 +5,26 @@ const Contact = () => {
   const contactItems = [
     {
       title: 'Email',
-      link: 'mailto:alexjoonkim02@gmail.com',
-      icon: '✉️', // Add an appropriate icon for Email
+      link: 'mailto:nwb6za@virginia.edu',
+      icon: '✉️', 
+      target: '_self',
     },
     {
       title: 'Phone Number',
-      link: 'tel:+17033805515',
+      link: 'tel:+15712964933',
       icon: '📞', // Add an appropriate icon for Phone Number
     },
     {
       title: 'LinkedIn',
-      link: 'https://www.linkedin.com/',
+      link: 'https://www.linkedin.com/in/vincentsong/',
       icon: '🔗', // Add an appropriate icon for LinkedIn
+      target: '_blank',
     },
     {
       title: 'GitHub',
-      link: 'https://github.com/',
-      icon: '🌐', // Add an appropriate icon for GitHub
+      link: 'https://github.com/vsong15',
+      icon: '🌐', 
+      target: '_blank',
     },
   ];
 
@@ -38,15 +41,26 @@ const Contact = () => {
               key={index}
               className="p-4 rounded-md border border-gray-200 shadow-md hover:shadow-lg transition duration-300 ease-in-out"
             >
-              <a
-                href={item.link}
-                className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="text-xl">{item.icon}</span>
-                <span>{item.title}</span>
-              </a>
+              {item.title === 'Phone Number' ? (
+                <a href={item.link}
+                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
+                  rel="noopener noreferrer"
+                  style={{pointerEvents: 'hover'}}
+                >
+                  <span className="text-xl">{item.icon}</span>
+                  <span>{item.title}</span>
+                </a>
+              ) : (
+                <a
+                  href={item.link}
+                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
+                  target={item.target || '_blank'} // Set target to _blank if target doesn't exist
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-xl">{item.icon}</span>
+                  <span>{item.title}</span>
+                </a>
+              )}
             </div>
           ))}
         </div>
