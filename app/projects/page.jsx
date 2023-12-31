@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
 import { useTheme } from 'next-themes';
+import { ChevronRightCircle } from 'lucide-react';
 
 const projectData = [
   {
@@ -56,7 +57,7 @@ const Projects = () => {
     <section className={`min-h-screen pt-8 ${theme === 'dark' ? '' : 'grey-background'}`}>
       <div className='container mx-auto'>
         <h2 className='section-title mb-8 xl:mb-8 text-center mx-auto'>
-          My Projects
+          <ChevronRightCircle /> My Projects
         </h2>
         <Tabs defaultValue={category}>
           <TabsList className="border w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto">
