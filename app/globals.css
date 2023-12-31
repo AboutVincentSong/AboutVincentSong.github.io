@@ -97,3 +97,7 @@
 .white-logo {
   filter: invert(100%)
 }
+
+.white-text {
+  color: white;
+}
