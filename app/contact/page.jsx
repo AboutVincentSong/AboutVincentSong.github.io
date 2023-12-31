@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { ChevronRightCircle } from 'lucide-react';
 
@@ -28,6 +30,11 @@ const Contact = () => {
     },
   ];
 
+   const handleClick = (event) => {
+    event.preventDefault(); // Prevents the default behavior of the anchor tag
+    // Add any other logic you want to perform
+  };
+
   return (
     <section style={{ paddingTop: '100px' }} className='min-h-screen'>
       <div className="app__contact text-center mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-sm lg:max-w-screen-sm xl:max-w-screen-sm">
@@ -46,6 +53,7 @@ const Contact = () => {
                   className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 hover:text-indigo-600"
                   rel="noopener noreferrer"
                   style={{pointerEvents: 'hover'}}
+                  onClick={handleClick}
                 >
                   <span className="text-xl">{item.icon}</span>
                   <span>{item.title}</span>
