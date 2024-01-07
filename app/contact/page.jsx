@@ -1,79 +1,78 @@
-'use client';
-
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import { ChevronRightCircle } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import axios from 'axios';
 
 const Contact = () => {
-  const contactItems = [
-    {
-      title: 'Email',
-      link: 'mailto:nwb6za@virginia.edu',
-      icon: '✉️', 
-      target: '_self',
-    },
-    {
-      title: 'Phone Number',
-      link: 'tel:+15712964933',
-      icon: '📞', 
-    },
-    {
-      title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/vincentsong/',
-      icon: '🔗', 
-      target: '_blank',
-    },
-    {
-      title: 'GitHub',
-      link: 'https://github.com/vsong15',
-      icon: '🌐', 
-      target: '_blank',
-    },
-  ];
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-   const handleClick = (event) => {
-    event.preventDefault(); 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      // Make a POST request to the backend API endpoint
+      await axios.post('/send-email', { name, email, message });
+      console.log('Email sent successfully');
+      // Clear form fields after successful submission
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      // Handle error if the email fails to send
+    }
   };
 
-  const { theme } = useTheme();
-
   return (
-    <section style={{ paddingTop: '100px' }} className='min-h-screen'>
+    <section style={{ paddingTop: '70px' }} className='min-h-screen'>
       <div className="app__contact text-center mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-sm lg:max-w-screen-sm xl:max-w-screen-sm">
         <h2 className="h2 mx-auto section-title text-align-center mb-8">
-          <ChevronRightCircle /> Contact Information
+          <ChevronRightCircle /> Contact Me
         </h2>
 
-        <div className="space-y-4">
-          {contactItems.map((item, index) => (
-            <div
-              key={index}
-              className="p-4 rounded-md border border-gray-200 shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-            >
-              {item.title === 'Phone Number' ? (
-                <a href={item.link}
-                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 blue-text"
-                  rel="noopener noreferrer"
-                  style={{pointerEvents: 'hover'}}
-                  onClick={handleClick}
-                >
-                  <span className="text-xl">{item.icon}</span>
-                  <span className={`${theme === 'dark' ? 'white-text' : ''}`}>{item.title}</span>
-                </a>
-              ) : (
-                <a
-                  href={item.link}
-                  className="flex items-center justify-center space-x-2 text-lg font-bold text-gray-800 blue-text"
-                  target={item.target || '_blank'} 
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-xl">{item.icon}</span>
-                  <span className={`${theme === 'dark' ? 'white-text' : ''}`}>{item.title}</span>
-                </a>
-              )}
+        <form onSubmit={handleSubmit}>
+          <div className="space-y-4">
+            <div className="p-4 rounded-md border border-gray-200 shadow-md">
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="w-full p-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              />
             </div>
-          ))}
-        </div>
+            <div className="p-4 rounded-md border border-gray-200 shadow-md">
+              <input
+                type="email"
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="w-full p-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              />
+            </div>
+            <div className="p-4 rounded-md border border-gray-200 shadow-md">
+              <textarea
+                placeholder="Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+                rows={4}
+                className="w-full p-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              />
+            </div>
+            <div className="p-4">
+              <button
+                type="submit"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   );
