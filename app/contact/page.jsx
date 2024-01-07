@@ -11,22 +11,6 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const { theme } = useTheme();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      // Make a POST request to the backend API endpoint
-      await axios.post('/send-email', { name, email, message });
-      console.log('Email sent successfully');
-      // Clear form fields after successful submission
-      setName('');
-      setEmail('');
-      setMessage('');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      // Handle error if the email fails to send
-    }
-  };
-
   return (
 
     <section style={{ paddingTop: '70px' }} className='min-h-screen'>
@@ -35,11 +19,13 @@ const Contact = () => {
           <ChevronRightCircle /> Contact Me
         </h2>
 
-        <form onSubmit={handleSubmit}>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9d9b1321-3fd3-400d-9645-bbb54f209e36" />
           <div className="space-y-4">
             <div className="p-4 rounded-md border dark:bg-[#1e293b] dark:border-gray-600 shadow-md">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -51,6 +37,7 @@ const Contact = () => {
             <div className="p-4 rounded-md border dark:bg-[#1e293b] dark:border-gray-600 shadow-md">
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -61,6 +48,7 @@ const Contact = () => {
             </div>
             <div className="p-4 rounded-md border dark:bg-[#1e293b] dark:border-gray-600 shadow-md">
               <textarea
+                name="message"
                 placeholder="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
