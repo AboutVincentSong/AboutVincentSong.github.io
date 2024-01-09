@@ -23,6 +23,14 @@ const projectData = [
       github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
   },
   {
+      image: '/work/uvagdsc.png',
+      category: 'Front-End',
+      name: 'UVA GDSC Official Website',
+      description: 'Developed the website using NextJS and React and hosted project in Firebase with custom domain for 250+ members to access resources and events information.',
+      link: 'https://uvagdsc.com/',
+      github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
+  },
+  {
       image: '/work/snippetbox.png',
       category: 'Full-Stack',
       name: 'Snippetbox',
@@ -40,7 +48,7 @@ const projectData = [
   },
 ];
 
-const uniqueCategories = ['All Projects', 'Front-End', 'Back-End', ...new Set(projectData.map((item) => item.category))];
+const uniqueCategories = ['All Projects', 'Front-End', 'Back-End', 'Full-Stack'];
 
 const Projects = () => {
   const { theme } = useTheme();
@@ -67,7 +75,7 @@ const Projects = () => {
               </TabsTrigger>;
             })}
           </TabsList>
-          <div className='text-lg xl:mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
+          <div className='text-lg xl:mt-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
             {filteredProjects.map((project, index)=>{
               return <TabsContent value={category} key={index}>
                 <ProjectCard project={project}/>
