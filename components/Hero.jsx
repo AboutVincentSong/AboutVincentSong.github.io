@@ -25,7 +25,7 @@ const Hero = () => {
                     <div className='flex relative items-center justify-center mb-2'>
                         <DevImg containerStyles="w-[175px] h-[175px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden" imgSrc='/hero/developer.png'/>
                     </div>
-                    <p className='subtitle max-w-[490px] mx-auto'>I am a driven third-year computer science student at the University of Virginia's School of Engineering.</p>
+                    <p className='subtitle max-w-[490px] mx-auto'>I am a driven fourth-year computer science student at the University of Virginia's School of Engineering.</p>
                     <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto mb-4'>
                         <Link href='/contact'>
                             <Button className='gap-x-2'>
