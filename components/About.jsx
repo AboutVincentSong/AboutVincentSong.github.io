@@ -16,11 +16,11 @@ const infoData = [
     },
     {
         icon: <MailIcon size={20} />,
-        text: 'nwb6za@virginia.edu',
+        text: 'vsong@virginia.edu',
     },
     {
         icon: <MapPin size={20} />,
-        text: 'Springfield, VA',
+        text: 'Burke, VA',
     },
     {
         icon: <GraduationCap size={20} />,
@@ -28,7 +28,7 @@ const infoData = [
     },
     {
         icon: <Briefcase size={20} />,
-        text: 'Software Engineer at theCourseForum',
+        text: 'SWE Intern @ ST Engineering iDirect',
     },
 ]
 
@@ -38,7 +38,12 @@ const qualificationData = [
         data: [
             {
                 university: 'University of Virginia',
-                qualifictaion: 'B.S. Computer Science',
+                qualifictaion: 'Master of Computer Science (M.C.S.)',
+                years: 'August 2024 - May 2026',
+            },
+            {
+                university: 'University of Virginia',
+                qualifictaion: 'Bachelor of Science (B.S.) Computer Science',
                 years: 'August 2021 - May 2025',
             },
             {
@@ -52,24 +57,24 @@ const qualificationData = [
         title: 'experience',
         data: [
             {
-                company: 'theCourseForum',
-                role: 'Software Engineer',
-                years: 'September 2023 - Present',
+                company: 'ST Engineering iDirect',
+                role: 'Software Engineering Intern',
+                years: 'May 2024 - August 2024',
             },
             {
-                company: 'UVA CS Department',
+                company: 'theCourseForum',
+                role: 'Software Engineer',
+                years: 'September 2023 - May 2024',
+            },
+            {
+                company: 'UVA Engineering',
                 role: 'Teaching Assistant',
-                years: 'January 2023 - December 2023',
+                years: 'January 2023 - May 2024',
             },
             {
                 company: 'Vali Cyber',
                 role: 'Engineer Intern',
                 years: 'June 2023 - July 2023',
-            },
-            {
-                company: 'TRTCLE',
-                role: 'Website Coordinator',
-                years: 'August 2022 - December 2022',
             },
         ]
     }
@@ -81,21 +86,25 @@ const skillData = [
         data: [
             {
                 name: 'Programming Languages:',
-                list: 'Java, Python, C#, C++, JavaScript, TypeScript, PHP, HTML, CSS, SQL, Bash, Go, R, MATLAB',
+                list: 'Python, Java, C/C++, C#, JavaScript, TypeScript, SQL, PHP, HTML, CSS, Bash, YAML, MATLAB, R',
             },
             {
                 name: 'Tools:',
-                list: 'Microsoft Office, Git, PostgreSQL, Docker, Heroku, AWS, Azure, Google Cloud Platform, Selenium',
+                list: 'Git, VS Code, Linux, Docker, Kubernetes, OpenShift, Jenkins, PostgreSQL, AWS, Azure, Heroku, Bitbucket, Jira',
             },
             {
                 name: 'Frameworks:',
-                list: 'Django, .NET Core, React, Next.js, Flask, Ruby on Rails, JUnit 5, Bootstrap, TailwindCSS',
+                list: 'React, Django, Node.js, .NET Core, Flask, Ruby on Rails, GraphQL, JavaFX, Bootstrap, JUnit 5, Pytest',
             },
         ],
     },
     {
         title: 'certs',
         data: [
+            {
+                imgPath: '/about/AWS-DA.png',
+                url: 'https://www.credly.com/badges/905fc137-9633-4164-872b-ee55f8c61d29/public_url',
+            },
             {
                 imgPath: '/about/AWS-CCP.png',
                 url: 'https://www.credly.com/badges/449a81b6-2891-433d-a9e9-caa7a0d11f47/public_url',
