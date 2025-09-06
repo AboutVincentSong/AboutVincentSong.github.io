@@ -95,7 +95,7 @@ const skillData = [
                 { src: '/icons/Python.png', label: 'Python' },
                 { src: '/icons/Java.png', label: 'Java' },
                 { src: '/icons/C.png', label: 'C' },
-                { src: '/icons/Cpp.png', label: 'C++' }, 
+                { src: '/icons/cpp.png', label: 'C++' }, 
                 { src: '/icons/Csharp.png', label: 'C#' }, 
                 { src: '/icons/javascript.png', label: 'JavaScript' },
                 { src: '/icons/typescript.png', label: 'TypeScript' },  
