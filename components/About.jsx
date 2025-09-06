@@ -16,7 +16,7 @@ const infoData = [
     },
     {
         icon: <MailIcon size={20} />,
-        text: 'vsong@virginia.edu',
+        text: 'vincentkaizsong@gmail.com',
     },
     {
         icon: <MapPin size={20} />,
@@ -24,11 +24,11 @@ const infoData = [
     },
     {
         icon: <GraduationCap size={20} />,
-        text: 'Bachelor of Science, Computer Science',
+        text: 'Master of Computer Science',
     },
     {
         icon: <Briefcase size={20} />,
-        text: 'SWE Intern @ ST Engineering iDirect',
+        text: 'SWE Grad Intern @ MITRE',
     },
 ]
 
@@ -39,7 +39,7 @@ const qualificationData = [
             {
                 university: 'University of Virginia',
                 qualifictaion: 'Master of Computer Science (M.C.S.)',
-                years: 'August 2024 - May 2026',
+                years: 'August 2025 - May 2026',
             },
             {
                 university: 'University of Virginia',
@@ -57,24 +57,29 @@ const qualificationData = [
         title: 'experience',
         data: [
             {
+                company: 'The MITRE Corporation',
+                role: 'Software Engineer Grad Intern',
+                years: 'May 2025 - Present',
+            },
+            {
                 company: 'ST Engineering iDirect',
                 role: 'Software Engineering Intern',
                 years: 'May 2024 - August 2024',
             },
             {
-                company: 'theCourseForum',
-                role: 'Software Engineer',
-                years: 'September 2023 - May 2024',
-            },
-            {
                 company: 'UVA Engineering',
-                role: 'Teaching Assistant',
+                role: 'Computer Systems/Organization 1 Teaching Assistant',
                 years: 'January 2023 - May 2024',
             },
             {
                 company: 'Vali Cyber',
                 role: 'Engineer Intern',
                 years: 'June 2023 - July 2023',
+            },
+            {
+                company: 'TRTCLE',
+                role: 'Website Coordinator Intern',
+                years: 'August 2022 - December 2022',
             },
         ]
     }
