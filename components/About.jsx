@@ -90,16 +90,37 @@ const skillData = [
         title: 'skills',
         data: [
             {
-                name: 'Programming Languages:',
-                list: 'Python, Java, C/C++, C#, JavaScript, TypeScript, SQL, PHP, HTML, CSS, Bash, YAML, MATLAB, R',
+                name: 'Languages',
+                icons: [
+                { src: '/icons/Python.png', label: 'Python' },
+                { src: '/icons/Java.png', label: 'Java' },
+                { src: '/icons/C.png', label: 'C' },
+                { src: '/icons/Cpp.png', label: 'C++' }, 
+                { src: '/icons/Csharp.png', label: 'C#' }, 
+                { src: '/icons/javascript.png', label: 'JavaScript' },
+                { src: '/icons/typescript.png', label: 'TypeScript' },  
+                { src: '/icons/html.png', label: 'HTML' },  
+                { src: '/icons/css.png', label: 'CSS' }, 
+                { src: '/icons/bash.png', label: 'Bash' },   
+                ],
             },
             {
-                name: 'Tools:',
-                list: 'Git, VS Code, Linux, Docker, Kubernetes, OpenShift, Jenkins, PostgreSQL, AWS, Azure, Heroku, Bitbucket, Jira',
-            },
-            {
-                name: 'Frameworks:',
-                list: 'React, Django, Node.js, .NET Core, Flask, Ruby on Rails, GraphQL, JavaFX, Bootstrap, JUnit 5, Pytest',
+                name: 'Frameworks & Libraries',
+                icons: [
+                { src: '/icons/react.png', label: 'React' },
+                { src: '/icons/angular.png', label: 'Angular' },
+                { src: '/icons/nodejs.png', label: 'Node.js' },
+                { src: '/icons/django.png', label: 'Django' },
+                { src: '/icons/dotnet.png', label: 'ASP.NET Core' },
+                { src: '/icons/springboot.png', label: 'Spring Boot' },
+                { src: '/icons/graphql.png', label: 'GraphQL' },
+                { src: '/icons/sklearn.png', label: 'Scikit-learn' },
+                { src: '/icons/tensorflow.png', label: 'TensorFlow' },
+                { src: '/icons/pytorch.png', label: 'PyTorch' },
+                { src: '/icons/pandas.png', label: 'Pandas' },
+                { src: '/icons/opencv.png', label: 'OpenCV' },
+                { src: '/icons/vite.png', label: 'Vite' },
+                ],
             },
         ],
     },
@@ -219,18 +240,28 @@ const About = () => {
                                         <div className="mb-4">
                                             <h4 className="text-xl font-semibold mb-2">Skills</h4>
                                             <div className="border-b border-border mb-4"></div>
-                                            <div>
-                                                {getData(skillData, 'skills').data.map(
-                                                    (item, index)=> {
-                                                        const {name, list} = item;
-                                                        return (
-                                                            <div className="w-2/4 text-center mx-auto" key={index}>
-                                                                <div className="font-medium">{name}</div>
-                                                                <div className="font-small">{list}</div>
-                                                                <br></br>
+                                            <div className="flex flex-col items-center gap-6">
+                                                {getData(skillData, 'skills').data.map((item, index) => (
+                                                <div key={index} className="flex flex-col items-center gap-4">
+                                                    <div className="font-medium text-lg">{item.name}</div>
+                                                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-6 justify-items-center">
+                                                        {item.icons.map((iconObj, i) => (
+                                                            <div key={i} className="flex flex-col items-center gap-2">
+                                                            <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center shadow-md">
+                                                                <Image
+                                                                src={iconObj.src}
+                                                                alt={iconObj.label}
+                                                                width={40}
+                                                                height={40}
+                                                                priority
+                                                                />
                                                             </div>
-                                                        )
-                                                })}
+                                                            <div className="text-sm font-medium">{iconObj.label}</div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                ))}
                                             </div>
                                         </div>
                                         <div>
