@@ -5,17 +5,17 @@ const servicesData = [
     {
         icon: <Award size={72} strokeWidth={0.8} />,
         title: 'Honors/Awards',
-        description: 'Dean\'s List (Fall \'21, Spring \'22, Spring \'23) Issued by University of Virginia · Jan 2022; 1st Place Hack TJ 7.5 EastBanc: TransitIQ Issued by TJHSST, EastBanc Technologies · Dec 2020',
+        description: 'Highest Distinction, B.S. in Computer Science; UVA Engineering Dean\'s List; Honor of living in 52 East Range, part of the Academical Village; 1st Place Hack TJ 7.5 — EastBanc TransitIQ.',
     },
     {
         icon: <Goal size={72} strokeWidth={0.8} />,
         title: 'Leadership',
-        description: 'UVA: Google DSC Club Executive/Web Developer; WSHS: Vice President of  CSHS, Virginia TSA Video Game Design Team Lead, Robotics Club Co-founder/Secretary.',
+        description: 'UVA: Google Developer Groups Club Executive & Web Master; WSHS: Vice President of  CSHS, Virginia TSA Video Game Design Team Lead, Robotics Club Co-founder & Secretary.',
     },
     {
         icon: <UsersRound size={72} strokeWidth={0.8} />,
         title: 'Clubs/Organizations',
-        description: 'UVA Google DSC, HooHacks, Association for Computing Machinery, Machine Learning Club, UVA Rocketry, Gizmologists, Project: Code, UVA MARS, Data Science and Analytics Club',
+        description: 'UVA Google Developer Groups, theCourseForum, HooHacks, ACM, ML Club, UVA Rocketry, Gizmologists, Project: Code, UVA MARS, Data Science and Analytics Club',
     },
 ];
 
