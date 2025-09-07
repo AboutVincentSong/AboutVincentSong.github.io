@@ -28,10 +28,10 @@ const reviewsData = [
         review: 'Topics Include: Database Design (ER Modeling, Normalization), SQL & Relational Algebra, Indexing & Transaction Processing, Database Programming & Interfacing, Relational & NoSQL Databases, Distributed Databases & Scaling, Load Balancing, Caching, Content Delivery Networks, Storage Systems (Object Storage, Data Warehouses), and Messaging Queues.'
     },
     {
-        avatar: '/reviews/softwaretesting.png',
+        avatar: '/reviews/internet.png',
         name: 'Internet Scale Applications',
         job: 'CS 4260',
-        review: 'Topics Include: Faults, Errors, Failures, RIPR Model, Model Driven Test Design (MDTD), Test Automation w/ JUnit 5 and Selenium; Input-Space Partition (ISP), Graph-based, Logic-based, Syntax-based, and Bypass Testing; Test-Driven Development (TDD).'
+        review: 'Topics Include: HTTP & CGI, Monolithic and Microservice Architecture, JavaScript & the DOM, Events & CSS, JavaScript Objects & Classes, JSON & Asynchronous Programming, Modals & Node, Microservices, Databases (SQL & NoSQL), Databases at Scale & CRUD, Authentication, Virtualization, Platforms & Orchestration, Load Testing, and Software Testing.'
     },
     {
         avatar: '/reviews/cybersecurity.png',
