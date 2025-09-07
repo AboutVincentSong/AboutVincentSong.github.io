@@ -40,10 +40,10 @@ const reviewsData = [
         review: 'Topics Include: Linear Models for Regression and Classification, Bayesian Inference & Decision Theory, Kernel Methods & Support Vector Machines, Neural Networks, Graphical Models & Bayesian Networks, Mixture Models & Clustering, Expectation-Maximization (EM) Algorithm, Dimensionality Reduction & PCA, and Hidden Markov Models.'
     },
     {
-        avatar: '/reviews/sde.png',
+        avatar: '/reviews/nlp.png',
         name: 'Natural Language Processing',
         job: 'CS 6770',
-        review: 'Topics Include: Java, Git, Build Tools (Gradle), Whitebox/Blackbox Testing (Mockito), Defensive Programming, Refactoring, Functional Programming, Integration, Software Design Principles, GUI, Design Patterns, JSON, Web-Services, SQLite, JDBC, Hibernate.'
+        review: 'Topics Include: Text Classification, Word Embeddings (LSA, Word2Vec), Language Modeling (n-gram & Neural LMs), Statistical Machine Translation, Sequence-to-Sequence Models, Text Generation & Summarization, Transformers (GPT, BERT), Parameter-Efficient Fine-Tuning, In-Context Learning & LLM Practice, and NLP Applications for Science and Society.'
     },
     {
         avatar: '/reviews/dsa1.png',
