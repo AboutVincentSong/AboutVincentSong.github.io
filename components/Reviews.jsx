@@ -46,10 +46,10 @@ const reviewsData = [
         review: 'Topics Include: Text Classification, Word Embeddings (LSA, Word2Vec), Language Modeling (n-gram & Neural LMs), Statistical Machine Translation, Sequence-to-Sequence Models, Text Generation & Summarization, Transformers (GPT, BERT), Parameter-Efficient Fine-Tuning, In-Context Learning & LLM Practice, and NLP Applications for Science and Society.'
     },
     {
-        avatar: '/reviews/dsa1.png',
+        avatar: '/reviews/cv.png',
         name: '2D + 3D Computer Vision',
         job: 'CS 4501 / CS 6501',
-        review: 'Topics Include: Interfaces, Polymorphism, Vectors, Java Generics, Linked Lists/Iterators, Stacks/Queues, Big-O Notation, Amortized Analysis, BST/AVL Trees, Insertion Sort, Mergesort, Quicksort, Hash Tables, Priority Queues/Binary Heap, and Concurrency/Threads.'
+        review: 'Topics Include: Image Formation, Image Filtering, Detectors & Descriptors (SIFT, Feature Matching), Image Alignment & Model Fitting, Neural Networks, Backpropagation, CNNs, Sequential Models (RNNs & LSTMs), Vision Transformers, Dense Prediction & Transfer Learning, Generative Models (VAEs, GANs, Diffusion Models), and Multiview Geometry & 3D Representations.'
     },
 ]
 
