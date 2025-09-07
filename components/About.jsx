@@ -122,6 +122,25 @@ const skillData = [
                 { src: '/icons/vite.png', label: 'Vite' },
                 ],
             },
+            {
+                name: 'Tools & Platforms',
+                icons: [
+                { src: '/icons/git.png', label: 'Git' },
+                { src: '/icons/vscode.png', label: 'VS Code' },
+                { src: '/icons/linux.png', label: 'Linux' },
+                { src: '/icons/docker.png', label: 'Docker' },
+                { src: '/icons/kubernetes.png', label: 'Kubernetes' },    
+                { src: '/icons/aws.png', label: 'AWS' },
+                { src: '/icons/azure.png', label: 'Azure' },
+                { src: '/icons/postgres.png', label: 'PostgreSQL' },
+                { src: '/icons/mongo.png', label: 'MongoDB' },
+                { src: '/icons/mssql.png', label: 'MSSQL' },
+                { src: '/icons/neo4j.png', label: 'Neo4j' },
+                { src: '/icons/postman.png', label: 'Postman' },
+                { src: '/icons/heroku.png', label: 'Heroku' },
+                { src: '/icons/apache.png', label: 'Apache' },
+                ]
+            },
         ],
     },
     {
@@ -242,11 +261,11 @@ const About = () => {
                                             <div className="border-b border-border mb-4"></div>
                                             <div className="flex flex-col items-center gap-6">
                                                 {getData(skillData, 'skills').data.map((item, index) => (
-                                                <div key={index} className="flex flex-col items-center gap-4">
-                                                    <div className="font-medium text-lg">{item.name}</div>
-                                                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-6 justify-items-center">
+                                                    <div key={index} className="flex flex-col items-center gap-4">
+                                                        <div className="font-medium text-lg">{item.name}</div>
+                                                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
                                                         {item.icons.map((iconObj, i) => (
-                                                            <div key={i} className="flex flex-col items-center gap-2">
+                                                            <div key={i} className="flex flex-col items-center w-24 gap-1">
                                                             <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center shadow-md">
                                                                 <Image
                                                                 src={iconObj.src}
@@ -256,11 +275,11 @@ const About = () => {
                                                                 priority
                                                                 />
                                                             </div>
-                                                            <div className="text-sm font-medium">{iconObj.label}</div>
+                                                            <div className="text-sm font-medium text-center">{iconObj.label}</div>
                                                             </div>
                                                         ))}
+                                                        </div>
                                                     </div>
-                                                </div>
                                                 ))}
                                             </div>
                                         </div>
