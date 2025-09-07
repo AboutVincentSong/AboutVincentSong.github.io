@@ -34,10 +34,10 @@ const reviewsData = [
         review: 'Topics Include: HTTP & CGI, Monolithic and Microservice Architecture, JavaScript & the DOM, Events & CSS, JavaScript Objects & Classes, JSON & Asynchronous Programming, Modals & Node, Microservices, Databases (SQL & NoSQL), Databases at Scale & CRUD, Authentication, Virtualization, Platforms & Orchestration, Load Testing, and Software Testing.'
     },
     {
-        avatar: '/reviews/cybersecurity.png',
+        avatar: '/reviews/ml.png',
         name: 'Machine Learning',
         job: 'CS 4774 / CS 6316',
-        review: 'Topics Include: Encryption, Networking, Web Security, Anonymity, SQL Injection Attacks, Cross Site Scripting (CSS), Cross-Site Request Forgery (CSRF) Cryptocurrency, Rootkits, Viruses, Buffer Overflows, Binary Exploits, Digital Forensics, and Virtual Machines.'
+        review: 'Topics Include: Linear Models for Regression and Classification, Bayesian Inference & Decision Theory, Kernel Methods & Support Vector Machines, Neural Networks, Graphical Models & Bayesian Networks, Mixture Models & Clustering, Expectation-Maximization (EM) Algorithm, Dimensionality Reduction & PCA, and Hidden Markov Models.'
     },
     {
         avatar: '/reviews/sde.png',
