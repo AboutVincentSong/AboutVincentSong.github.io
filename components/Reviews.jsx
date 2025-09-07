@@ -22,10 +22,10 @@ const reviewsData = [
         review: 'Topics Include: Baremetal Programming (UART/printf, Timers & Interrupts), Embedded Scheduling, Memory Allocation & Task Management, Virtual Memory & User/Kernel Separation, System Calls, Filesystems (xv6, FAT32), Device Drivers (USB & Sound), libc (newlib), Raspberry Pi Development, Multicore Processing, and DOOM on GameHAT.'
     },
     {
-        avatar: '/reviews/dsa2.png',
+        avatar: '/reviews/db.png',
         name: 'Database Systems',
         job: 'CS 4750',
-        review: 'Topics Include: Graphs, BFS/DFS, Topological Sorting, Dijkstra\'s Algorithm, Divide & Conquer Algorithms, Master Theorem, Greedy Algorithms, Minimum Spanning Trees, Huffman Coding, Dynamic Programming, Network Flow, Reductions, and Machine Learning Algorithms.'
+        review: 'Topics Include: Database Design (ER Modeling, Normalization), SQL & Relational Algebra, Indexing & Transaction Processing, Database Programming & Interfacing, Relational & NoSQL Databases, Distributed Databases & Scaling, Load Balancing, Caching, Content Delivery Networks, Storage Systems (Object Storage, Data Warehouses), and Messaging Queues.'
     },
     {
         avatar: '/reviews/softwaretesting.png',
