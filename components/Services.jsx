@@ -15,7 +15,7 @@ const servicesData = [
     {
         icon: <UsersRound size={72} strokeWidth={0.8} />,
         title: 'Clubs/Organizations',
-        description: 'UVA Google Developer Groups, theCourseForum, HooHacks, ACM, ML Club, UVA Rocketry, Gizmologists, Project: Code, UVA MARS, Data Science and Analytics Club',
+        description: 'UVA Google Developer Groups, theCourseForum, HooHacks, ACM, ML Club, UVA Rocketry, Gizmologists, Project: Code, UVA MARS, Data Science and Analytics Club.',
     },
 ];
 
