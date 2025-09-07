@@ -16,10 +16,10 @@ import { Pagination } from 'swiper/modules';
 
 const reviewsData = [
     {
-        avatar: '/reviews/asd.png',
+        avatar: '/reviews/os.png',
         name: 'Operating Systems',
         job: 'CS 4414 / CS 6456',
-        review: 'Topics Include: Agile Methodologies, Requirements Elicitation/Specification, Risk Management, Django, Heroku, DevOps, MVC Architecture, Usability, Personas/Wireframes, Verification/Validation, SE Code of Ethics, DEI, Security, Maintenance, and Licensing.'
+        review: 'Topics Include: Baremetal Programming (UART/printf, Timers & Interrupts), Embedded Scheduling, Memory Allocation & Task Management, Virtual Memory & User/Kernel Separation, System Calls, Filesystems (xv6, FAT32), Device Drivers (USB & Sound), libc (newlib), Raspberry Pi Development, Multicore Processing, and DOOM on GameHAT.'
     },
     {
         avatar: '/reviews/dsa2.png',
