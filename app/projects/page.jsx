@@ -23,6 +23,14 @@ const projectData = [
       github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
   },
   {
+      image: '/work/coursesync.png',
+      category: 'Full-Stack',
+      name: 'Course Sync',
+      description: 'Developed a student enrollment database management system using C++ to manage course registrations, faculty/staff roles, and database interactions efficiently.',
+      link: '',
+      github: 'https://github.com/vsong15/Course-Sync',
+  },
+  {
       image: '/work/uvagdsc.png',
       category: 'Front-End',
       name: 'UVA GDG Official Website',
@@ -31,13 +39,13 @@ const projectData = [
       github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
   },
   {
-        image: '/work/firstPortfolio.png',
-        category: 'Front-End',
-        name: 'First Portfolio Website',
-        description: 'Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills.',
-        link: 'https://vsong15.github.io/',
-        github: 'https://github.com/vsong15/vsong15.github.io',
-    },
+      image: '/work/firstPortfolio.png',
+      category: 'Front-End',
+      name: 'First Portfolio Website',
+      description: 'Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills.',
+      link: 'https://vsong15.github.io/',
+      github: 'https://github.com/vsong15/vsong15.github.io',
+  },
 ];
 
 const uniqueCategories = ['All Projects', 'Front-End', 'Back-End', 'Full-Stack'];
