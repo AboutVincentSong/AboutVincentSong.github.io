@@ -24,7 +24,7 @@ const projectData = [
   },
   {
       image: '/work/coursesync.png',
-      category: 'Full-Stack',
+      category: 'Back-End',
       name: 'Course Sync',
       description: 'Developed a student enrollment database management system using C++ to manage course registrations, faculty/staff roles, and database interactions efficiently.',
       link: '',
