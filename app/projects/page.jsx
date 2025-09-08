@@ -31,6 +31,14 @@ const projectData = [
       github: 'https://github.com/vsong15/Course-Sync',
   },
   {
+      image: '/work/olympicsdb.png',
+      category: 'Back-End',
+      name: 'Olympics Database',
+      description: 'Built a relational database with MSSQL Server and Spring Boot, using tables, triggers, and stored procedures to manage Olympic event and athlete data.',
+      link: '',
+      github: 'https://github.com/joyce-park/CS-4750-Final-Project',
+  },
+  {
       image: '/work/uvagdsc.png',
       category: 'Front-End',
       name: 'UVA GDG Official Website',
