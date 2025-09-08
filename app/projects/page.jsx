@@ -27,7 +27,7 @@ const projectData = [
       category: 'Front-End',
       name: 'UVA GDSC Official Website',
       description: 'Developed the website using NextJS and React and hosted project in Firebase with custom domain for 250+ members to access resources and events information.',
-      link: 'https://uvagdsc.com/',
+      link: '',
       github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
   },
   {
