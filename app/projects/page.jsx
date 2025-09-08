@@ -25,27 +25,19 @@ const projectData = [
   {
       image: '/work/uvagdsc.png',
       category: 'Front-End',
-      name: 'UVA GDSC Official Website',
+      name: 'UVA GDG Official Website',
       description: 'Developed the website using NextJS and React and hosted project in Firebase with custom domain for 250+ members to access resources and events information.',
       link: '',
       github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
   },
   {
-      image: '/work/snippetbox.png',
-      category: 'Full-Stack',
-      name: 'Snippetbox',
-      description: 'A full-stack Golang web application called "Snippetbox" that lets users Create, Read, Update, and Delete (CRUD) code text snippets (similar to GitHub gists).',
-      link: '',
-      github: 'https://github.com/vsong15/snippetbox',
-  },
-  {
-      image: '/work/devmatch.png',
-      category: 'Full-Stack',
-      name: 'DevMatch',
-      description: 'A full-stack web application using Ruby on Rails, HTML, CSS, JavaScript, Stripe, and Heroku with a subscription tier for users to access more premium features.',
-      link: '',
-      github: 'https://github.com/vsong15/devmatch',
-  },
+        image: '/work/firstPortfolio.png',
+        category: 'Front-End',
+        name: 'First Portfolio Website',
+        description: 'Built a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills.',
+        link: 'https://vsong15.github.io/',
+        github: 'https://github.com/vsong15/vsong15.github.io',
+    },
 ];
 
 const uniqueCategories = ['All Projects', 'Front-End', 'Back-End', 'Full-Stack'];

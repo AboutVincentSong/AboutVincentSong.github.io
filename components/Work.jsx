@@ -31,22 +31,6 @@ const projectData = [
         link: 'https://project-a-03-4b98fe94a410.herokuapp.com/',
         github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
     },
-    {
-        image: '/work/snippetbox.png',
-        category: 'Full-Stack',
-        name: 'Snippetbox',
-        description: 'A full-stack Golang web application called "Snippetbox" that lets users Create, Read, Update, and Delete (CRUD) code text snippets (similar to GitHub gists).',
-        link: '',
-        github: 'https://github.com/vsong15/snippetbox',
-    },
-    {
-        image: '/work/devmatch.png',
-        category: 'Full-Stack',
-        name: 'DevMatch',
-        description: 'A full-stack web application using Ruby on Rails, HTML, CSS, JavaScript, Stripe, and Heroku with a subscription tier for users to access more premium features.',
-        link: '',
-        github: 'https://github.com/vsong15/devmatch',
-    },
 ];
 
 const Work = () => {
