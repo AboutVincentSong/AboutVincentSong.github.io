@@ -31,6 +31,13 @@ const projectData = [
       'Enhanced user experience by integrating new SIS API for 1,500+ courses and added documentation and testing.',
     link: 'https://thecourseforum.com/',
     github: 'https://github.com/thecourseforum/theCourseForum2',
+    techStack: [
+        { src: '/icons/python.png', label: 'Python' },
+        { src: '/icons/django.png', label: 'Django' },
+        { src: '/icons/docker.png', label: 'Docker' },
+        { src: '/icons/aws.png', label: 'Amazon Web Services' },
+        { src: '/icons/postgres.png', label: 'PostgreSQL' },
+    ],
   },
   {
     image: '/work/tourGuide.png',
@@ -40,6 +47,13 @@ const projectData = [
       'Implemented Google Login/Maps API to provide 4,000+ first-year students access to campus location information.',
     link: 'https://project-a-03-4b98fe94a410.herokuapp.com/',
     github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
+    techStack: [
+        { src: '/icons/python.png', label: 'Python' },
+        { src: '/icons/javascript.png', label: 'JavaScript' },
+        { src: '/icons/django.png', label: 'Django' },
+        { src: '/icons/postgres.png', label: 'PostgreSQL' },
+        { src: '/icons/heroku.png', label: 'Heroku' },
+    ],
   },
   {
     image: '/work/coursesync.png',
