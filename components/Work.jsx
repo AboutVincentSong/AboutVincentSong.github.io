@@ -16,7 +16,7 @@ const projectData = [
         image: '/work/thedailybugle.png',
         category: 'Full-Stack',
         name: 'The Daily Bugle',
-        description: 'A scalable web app for Authors and Readers to create, edit, and comment on articles, with search, categories, image uploads, session tracking, and microservices.',
+        description: 'A scalable web app for Authors/Readers to create, edit, and comment on articles, with search, categories, image uploads, and session tracking.',
         link: '',
         github: 'https://github.com/vsong15/The-Daily-Bugle',
     },
@@ -24,7 +24,8 @@ const projectData = [
         image: '/work/theCourseForum.png',
         category: 'Full-Stack',
         name: 'theCourseForum',
-        description: 'Integrated new SIS API to retrieve course information for 1,500+ courses for all departments to enhance user experience with documentation and testing.',
+        description:
+        'Enhanced user experience by integrating new SIS API for 1,500+ courses and added documentation and testing.',
         link: 'https://thecourseforum.com/',
         github: 'https://github.com/thecourseforum/theCourseForum2',
     },
@@ -32,7 +33,8 @@ const projectData = [
         image: '/work/tourGuide.png',
         category: 'Full-Stack',
         name: 'UVA Tour Guide App',
-        description: 'Implemented Google Login/Maps API with Python and JS to provide 4,000 first-year students with access to location info around Grounds.',
+        description:
+        'Implemented Google Login/Maps API to provide 4,000+ first-year students access to campus location information.',
         link: 'https://project-a-03-4b98fe94a410.herokuapp.com/',
         github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
     },
