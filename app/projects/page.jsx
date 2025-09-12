@@ -60,9 +60,15 @@ const projectData = [
     category: 'Back-End',
     name: 'Course Sync',
     description:
-      'Developed a C++ database system and desktop application to manage student enrollment, faculty roles, and course registrations efficiently.',
+      'Developed a C++ database system and Windows desktop application to manage student enrollment, faculty roles, and course registrations efficiently.',
     link: '',
     github: 'https://github.com/vsong15/Course-Sync',
+    techStack: [
+        { src: '/icons/cpp.png', label: 'C++' },
+        { src: '/icons/c.png', label: 'C' },
+        { src: '/icons/bash.png', label: 'Bash' },
+        { src: '/icons/postgres.png', label: 'PostgreSQL' },
+    ],
   },
   {
     image: '/work/olympicsdb.png',
@@ -72,6 +78,12 @@ const projectData = [
       'Built relational database with MSSQL Server & Spring Boot, using tables, triggers, and stored procedures to manage Olympic event/athlete data.',
     link: '',
     github: 'https://github.com/joyce-park/CS-4750-Final-Project',
+    techStack: [
+        { src: '/icons/java.png', label: 'Java' },
+        { src: '/icons/springboot.png', label: 'Spring Boot' },
+        { src: '/icons/mssql.png', label: 'MSSQL' },
+        { src: '/icons/postman.png', label: 'Postman' },
+    ],
   },
   {
     image: '/work/uvagdg.png',
@@ -81,6 +93,12 @@ const projectData = [
       'Next.js & React website hosted on Firebase, giving 250+ members access to resources and events information.',
     link: '',
     github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
+    techStack: [
+      { src: '/icons/typescript.png', label: 'TypeScript' },
+      { src: '/icons/javascript.png', label: 'JavaScript' },
+      { src: '/icons/html.png', label: 'HTML' },
+      { src: '/icons/css.png', label: 'CSS' },
+    ],
   },
 ];
 
