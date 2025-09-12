@@ -14,6 +14,14 @@ const projectData = [
     description: 'A scalable web app for Authors/Readers to create, edit, and comment on articles, with search, categories, image uploads, and session tracking.',
     link: '',
     github: 'https://github.com/vsong15/The-Daily-Bugle',
+    techStack: [
+      { src: '/icons/javascript.png', label: 'JavaScript' },
+      { src: '/icons/nodejs.png', label: 'Node.js' },
+      { src: '/icons/mongo.png', label: 'MongoDB' },
+      { src: '/icons/docker.png', label: 'Docker' },
+      { src: '/icons/kubernetes.png', label: 'Kubernetes' },
+      { src: '/icons/apache.png', label: 'Apache' },
+    ],
   },
   {
     image: '/work/theCourseForum.png',
