@@ -6,11 +6,11 @@ import { Badge } from './ui/badge';
 
 export const ProjectCardWithTech = ({ project }) => {
   return (
-    <Card className="group overflow-hidden relative transform transition-transform duration-300 hover:scale-105 hover:z-10">
+    <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
         <div className="relative h-[50vh] md:h-[40vh] sm:h-[28vh] flex items-center justify-center bg-tertiary dark:bg-secondary/40">
           <Image 
-            className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg" 
+            className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg transform transition-transform duration-300 group-hover:scale-105" 
             src={project.image} 
             layout="fill" 
             alt={project.name} 
