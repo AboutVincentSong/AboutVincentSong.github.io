@@ -32,7 +32,7 @@ const projectData = [
     link: 'https://thecourseforum.com/',
     github: 'https://github.com/thecourseforum/theCourseForum2',
     techStack: [
-        { src: '/icons/python.png', label: 'Python' },
+        { src: '/icons/Python.png', label: 'Python' },
         { src: '/icons/django.png', label: 'Django' },
         { src: '/icons/docker.png', label: 'Docker' },
         { src: '/icons/aws.png', label: 'Amazon Web Services' },
@@ -48,7 +48,7 @@ const projectData = [
     link: 'https://project-a-03-4b98fe94a410.herokuapp.com/',
     github: 'https://github.com/vsong15/UVA-Tour-Guide-App',
     techStack: [
-        { src: '/icons/python.png', label: 'Python' },
+        { src: '/icons/Python.png', label: 'Python' },
         { src: '/icons/javascript.png', label: 'JavaScript' },
         { src: '/icons/django.png', label: 'Django' },
         { src: '/icons/postgres.png', label: 'PostgreSQL' },
@@ -65,7 +65,7 @@ const projectData = [
     github: 'https://github.com/vsong15/Course-Sync',
     techStack: [
         { src: '/icons/cpp.png', label: 'C++' },
-        { src: '/icons/c.png', label: 'C' },
+        { src: '/icons/C.png', label: 'C' },
         { src: '/icons/bash.png', label: 'Bash' },
         { src: '/icons/postgres.png', label: 'PostgreSQL' },
     ],
@@ -79,7 +79,7 @@ const projectData = [
     link: '',
     github: 'https://github.com/joyce-park/CS-4750-Final-Project',
     techStack: [
-        { src: '/icons/java.png', label: 'Java' },
+        { src: '/icons/Java.png', label: 'Java' },
         { src: '/icons/springboot.png', label: 'Spring Boot' },
         { src: '/icons/mssql.png', label: 'MSSQL' },
         { src: '/icons/postman.png', label: 'Postman' },
