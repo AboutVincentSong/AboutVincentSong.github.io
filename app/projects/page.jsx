@@ -52,7 +52,7 @@ const projectData = [
     github: 'https://github.com/joyce-park/CS-4750-Final-Project',
   },
   {
-    image: '/work/uvagdsc.png',
+    image: '/work/uvagdg.png',
     category: 'Front-End',
     name: 'UVA GDG Official Website',
     description:
