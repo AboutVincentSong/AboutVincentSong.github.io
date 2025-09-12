@@ -16,6 +16,14 @@ import { useTheme } from 'next-themes';
 
 const projectData = [
     {
+        image: '/work/thedailybugle.png',
+        category: 'Full-Stack',
+        name: 'The Daily Bugle',
+        description: 'A scalable web app for Authors and Readers to create, edit, and comment on articles, with search, categories, image uploads, session tracking, and microservices.',
+        link: '',
+        github: 'https://github.com/vsong15/The-Daily-Bugle',
+    },
+    {
         image: '/work/theCourseForum.png',
         category: 'Full-Stack',
         name: 'theCourseForum',
