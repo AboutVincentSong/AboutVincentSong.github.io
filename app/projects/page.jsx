@@ -11,7 +11,7 @@ const projectData = [
     image: '/work/thedailybugle.png',
     category: 'Full-Stack',
     name: 'The Daily Bugle',
-    description: 'A scalable web app for Authors and Readers to create, edit, and comment on articles, with search, categories, image uploads, session tracking, and microservices.',
+    description: 'A scalable web app for Authors/Readers to create, edit, and comment on articles, with search, categories, image uploads, and session tracking.',
     link: '',
     github: 'https://github.com/vsong15/The-Daily-Bugle',
   },
@@ -38,7 +38,7 @@ const projectData = [
     category: 'Back-End',
     name: 'Course Sync',
     description:
-      'Developed a C++ database system to manage student enrollment, faculty roles, and course registrations efficiently.',
+      'Developed a C++ database system and desktop application to manage student enrollment, faculty roles, and course registrations efficiently.',
     link: '',
     github: 'https://github.com/vsong15/Course-Sync',
   },
@@ -47,7 +47,7 @@ const projectData = [
     category: 'Back-End',
     name: 'Olympics Database',
     description:
-      'Built relational database with MSSQL Server & Spring Boot, using tables, triggers, and stored procedures to manage Olympic event and athlete data.',
+      'Built relational database with MSSQL Server & Spring Boot, using tables, triggers, and stored procedures to manage Olympic event/athlete data.',
     link: '',
     github: 'https://github.com/joyce-park/CS-4750-Final-Project',
   },
@@ -59,15 +59,6 @@ const projectData = [
       'Next.js & React website hosted on Firebase, giving 250+ members access to resources and events information.',
     link: '',
     github: 'https://github.com/UVA-Google-Developer-Student-Club/UVA-GDSC-Website',
-  },
-  {
-    image: '/work/firstPortfolio.png',
-    category: 'Front-End',
-    name: 'First Portfolio Website',
-    description:
-      'Personal portfolio website built using HTML, CSS, and JavaScript to showcase projects and skills.',
-    link: 'https://vsong15.github.io/',
-    github: 'https://github.com/vsong15/vsong15.github.io',
   },
 ];
 
