@@ -59,8 +59,8 @@ const Reviews = () => {
     <section className="py-16 xl:pb-28">
         <div className="container mx-auto">
             <div className="mx-auto mb-12 max-w-[760px] text-center">
-                <h2 className="section-title mb-4 text-center mx-auto"><ChevronRightCircle />Technical Foundation</h2>
-                <p className="subtitle">Graduate and upper-level coursework aligned with systems, scale, data, and AI roles.</p>
+                <h2 className="section-title mb-4 text-center mx-auto"><ChevronRightCircle />Relevant Coursework</h2>
+                <p className="subtitle">Graduate and upper-level coursework aligned with systems, scale, data, and AI domains.</p>
             </div>
             <Swiper 
                 slidesPerView={1} 

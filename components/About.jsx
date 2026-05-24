@@ -20,7 +20,7 @@ const infoData = [
     },
     {
         icon: <MapPin size={20} />,
-        text: 'Burke, VA',
+        text: 'Burke, Virginia, USA',
     },
     {
         icon: <GraduationCap size={20} />,
@@ -28,7 +28,7 @@ const infoData = [
     },
     {
         icon: <Briefcase size={20} />,
-        text: 'SWE Grad Intern @ MITRE',
+        text: 'Incoming SWE @ Nodal Exchange',
     },
 ]
 
@@ -57,9 +57,14 @@ const qualificationData = [
         title: 'experience',
         data: [
             {
+                company: 'Nodal Exchange',
+                role: 'Incoming Software Engineer',
+                years: 'May 2026 - Present',
+            },
+            {
                 company: 'The MITRE Corporation',
                 role: 'Software Engineer Grad Intern',
-                years: 'May 2025 - Present',
+                years: 'May 2025 - May 2026',
             },
             {
                 company: 'ST Engineering iDirect',
@@ -171,11 +176,8 @@ const About = () => {
             <div className="container mx-auto">
                 <div className="mx-auto mb-10 max-w-[760px] text-center">
                     <h2 className="section-title mb-4 text-center mx-auto">
-                    <ChevronRightCircle /> Recruiter Snapshot
+                    <ChevronRightCircle /> About Me
                     </h2>
-                    <p className="subtitle">
-                        A quick view of the experience, credentials, and technical range I bring to software engineering teams.
-                    </p>
                 </div>
                 <div className="flex flex-col">
                     <div className="flex-1">
@@ -196,9 +198,9 @@ const About = () => {
                                         })}
                                     </div>
                                     <div className="rounded-lg border border-primary/20 bg-primary/5 p-5 text-center">
-                                        <div className="text-sm font-semibold uppercase tracking-wide text-primary">Working Style</div>
+                                        <div className="text-sm font-semibold uppercase tracking-wide text-primary">Languages</div>
                                         <div className="mt-2 text-base text-muted-foreground">
-                                            Strong communicator with experience across product teams, teaching, clubs, and internships. Languages: English, Korean, Spanish, Tagalog.
+                                            English, Korean, Spanish, and Tagalog
                                         </div>
                                     </div>
                                 </TabsContent>

@@ -68,7 +68,7 @@ const Work = () => {
     <section className="relative py-16 xl:py-20">
       <div className="container mx-auto">
         <div className="max-w-[680px] mx-auto text-center mb-12 flex flex-col justify-center items-center">
-          <h2 className="section-title mb-4"><ChevronRightCircle />Featured Work</h2>
+          <h2 className="section-title mb-4"><ChevronRightCircle />Featured Projects</h2>
           <p className="subtitle mb-8">
             Selected projects that show backend depth, production-style infrastructure, collaboration, and full-stack delivery.
           </p>

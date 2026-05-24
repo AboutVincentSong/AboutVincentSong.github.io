@@ -24,8 +24,7 @@ const Services = () => {
     <section className='py-16'>
         <div className='container mx-auto'>
             <div className='mx-auto mb-12 max-w-[760px] text-center'>
-              <h2 className='section-title mb-4 text-center mx-auto'><ChevronRightCircle /> Proof Points</h2>
-              <p className='subtitle'>Signals recruiters can quickly validate: awards, leadership, and technical community involvement.</p>
+              <h2 className='section-title mb-4 text-center mx-auto'><ChevronRightCircle /> Awards, Leadership, and Involvement</h2>
             </div>
             <div className='grid xl:grid-cols-3 justify-center gap-6'>
                 {servicesData.map((item, index) => {
