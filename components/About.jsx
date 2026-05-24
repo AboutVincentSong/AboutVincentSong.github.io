@@ -167,33 +167,39 @@ const About = () => {
         return arr.find((item)=> item.title === title);
     };
     return (
-        <section className='xl-h-[860px] pb-12 xl:py24'>
+        <section id='about' className='relative scroll-mt-16 py-16 xl:py-20'>
             <div className="container mx-auto">
-                <h2 className="section-title mt-8 mb-8 text-center mx-auto">
-                <ChevronRightCircle /> About Me 
-                </h2>
+                <div className="mx-auto mb-10 max-w-[760px] text-center">
+                    <h2 className="section-title mb-4 text-center mx-auto">
+                    <ChevronRightCircle /> Recruiter Snapshot
+                    </h2>
+                    <p className="subtitle">
+                        A quick view of the experience, credentials, and technical range I bring to software engineering teams.
+                    </p>
+                </div>
                 <div className="flex flex-col">
                     <div className="flex-1">
                         <Tabs defaultValue='personal'>
-                            <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[720px] md:max-w-[520px] sm:max-w-[420px] border md:grid-cols-3 mx-auto'>
-                                <TabsTrigger style={{paddingLeft: '100px', paddingRight: '100px'}}value='personal'>Personal Info</TabsTrigger>
+                            <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[720px] md:max-w-[520px] sm:max-w-[420px] border md:grid-cols-3 mx-auto bg-secondary/70'>
+                                <TabsTrigger value='personal'>Profile</TabsTrigger>
                                 <TabsTrigger value='qualifications'>Qualifications</TabsTrigger>
                                 <TabsTrigger value='skills'>Skills</TabsTrigger>
                             </TabsList>
                             <div className='text-lg mt-12 xl:mt-8 xl:max-w-[720px] mx-auto '>
                                 <TabsContent value='personal'>
-                                    <div className='grid xl:grid-cols-2 gap-4 xl:gap-6 mb-12'>
+                                    <div className='grid xl:grid-cols-2 gap-4 xl:gap-5 mb-8'>
                                         {infoData.map((item, index)=> {
-                                            return <div className='flex items-center text-center gap-x-4 mx-auto xl:mx-0' key={index}>
-                                                    <div>{item.icon}</div>
-                                                    <div>{item.text}</div>
+                                            return <div className='flex items-center gap-x-4 rounded-lg border border-border/70 bg-background/80 p-4 shadow-sm' key={index}>
+                                                    <div className="text-primary">{item.icon}</div>
+                                                    <div className="text-base font-medium">{item.text}</div>
                                                 </div>
                                         })}
                                     </div>
-                                    <div className="flex flex-col  gap-y-2">
-                                        <div className="text-primary text-center">Languages</div>
-                                        <div className='border-b border-border'></div>
-                                        <div className="text-center">English, Korean, Spanish, Tagalog</div>
+                                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-5 text-center">
+                                        <div className="text-sm font-semibold uppercase tracking-wide text-primary">Working Style</div>
+                                        <div className="mt-2 text-base text-muted-foreground">
+                                            Strong communicator with experience across product teams, teaching, clubs, and internships. Languages: English, Korean, Spanish, Tagalog.
+                                        </div>
                                     </div>
                                 </TabsContent>
                                 <TabsContent value='qualifications'>
@@ -210,7 +216,7 @@ const About = () => {
                                                     const {company, role, years} = item;
                                                     return (
                                                         <div 
-                                                            className="flex gap-x-8 group" 
+                                                            className="flex gap-x-6 rounded-lg border border-border/70 bg-background/80 p-4 shadow-sm group" 
                                                             key={index}>
                                                             <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                                                 <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
@@ -237,7 +243,7 @@ const About = () => {
                                                     const {university, qualifictaion, years} = item;
                                                     return (
                                                         <div 
-                                                            className="flex gap-x-8 group" 
+                                                            className="flex gap-x-6 rounded-lg border border-border/70 bg-background/80 p-4 shadow-sm group" 
                                                             key={index}>
                                                             <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                                                 <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
@@ -261,12 +267,12 @@ const About = () => {
                                             <div className="border-b border-border mb-4"></div>
                                             <div className="flex flex-col items-center gap-6">
                                                 {getData(skillData, 'skills').data.map((item, index) => (
-                                                    <div key={index} className="flex flex-col items-center gap-4">
-                                                        <div className="font-medium text-lg">{item.name}</div>
+                                                    <div key={index} className="flex flex-col items-center gap-4 rounded-lg border border-border/70 bg-background/80 p-5 shadow-sm">
+                                                        <div className="font-semibold text-lg">{item.name}</div>
                                                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
                                                         {item.icons.map((iconObj, i) => (
                                                             <div key={i} className="flex flex-col items-center w-24 gap-1">
-                                                            <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center shadow-md">
+                                                            <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center shadow-sm">
                                                                 <Image
                                                                 src={iconObj.src}
                                                                 alt={iconObj.label}

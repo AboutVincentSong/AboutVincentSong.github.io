@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import {motion} from 'framer-motion'
 
 const links = [
-    {path: '/', name: 'home'},
+    {path: '/home', name: 'home'},
     {path: '/projects', name: 'projects'},
     {path: '/contact', name: 'contact'},
 ]

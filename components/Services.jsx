@@ -10,29 +10,32 @@ const servicesData = [
     {
         icon: <Goal size={72} strokeWidth={0.8} />,
         title: 'Leadership',
-        description: 'UVA: Google Developer Groups Club Executive & Web Master; WSHS: Vice President of  CSHS, Virginia TSA Video Game Design Team Lead, Robotics Club Co-founder & Secretary.',
+        description: 'Google Developer Groups executive and webmaster, teaching assistant experience, and long-running student leadership in CS, robotics, and software teams.',
     },
     {
         icon: <UsersRound size={72} strokeWidth={0.8} />,
         title: 'Clubs/Organizations',
-        description: 'UVA Google Developer Groups, theCourseForum, HooHacks, ACM, ML Club, UVA Rocketry, Gizmologists, Project: Code, UVA MARS, Data Science and Analytics Club.',
+        description: 'Active across engineering communities including Google Developer Groups, theCourseForum, HooHacks, ACM, ML Club, UVA Rocketry, and Project: Code.',
     },
 ];
 
 const Services = () => {
   return (
-    <section className='mb-12'>
+    <section className='py-16'>
         <div className='container mx-auto'>
-            <h2 className='section-title mb-12 text-center mx-auto'><ChevronRightCircle /> Additional Information</h2>
-            <div className='grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8'>
+            <div className='mx-auto mb-12 max-w-[760px] text-center'>
+              <h2 className='section-title mb-4 text-center mx-auto'><ChevronRightCircle /> Proof Points</h2>
+              <p className='subtitle'>Signals recruiters can quickly validate: awards, leadership, and technical community involvement.</p>
+            </div>
+            <div className='grid xl:grid-cols-3 justify-center gap-6'>
                 {servicesData.map((item, index) => {
-                    return <Card className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative' key={index}>
-                        <CardHeader className='text-primary absolute -top-[60px]'>
-                            <div className='w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>{item.icon}</div>
+                    return <Card className='w-full max-w-[424px] min-h-[270px] flex flex-col justify-center border-border/70 bg-background/80 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl' key={index}>
+                        <CardHeader className='text-primary p-0'>
+                            <div className='mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10'>{item.icon}</div>
                         </CardHeader>
-                        <CardContent className='text-center'>
-                            <CardTitle className='mt-4 mb-4'>{item.title}</CardTitle>
-                            <CardDescription className='text-lg'>{item.description}</CardDescription>
+                        <CardContent className='p-0'>
+                            <CardTitle className='mb-3 text-xl'>{item.title}</CardTitle>
+                            <CardDescription className='text-base leading-relaxed'>{item.description}</CardDescription>
                         </CardContent>
                     </Card>
                 })}

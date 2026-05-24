@@ -56,9 +56,12 @@ const reviewsData = [
 const Reviews = () => {
   const { theme } = useTheme();
   return (
-    <section className="mb-12 xl:mb-32">
+    <section className="py-16 xl:pb-28">
         <div className="container mx-auto">
-            <h2 className="section-title mb-12 text-center mx-auto"><ChevronRightCircle />Relevant Coursework</h2>
+            <div className="mx-auto mb-12 max-w-[760px] text-center">
+                <h2 className="section-title mb-4 text-center mx-auto"><ChevronRightCircle />Technical Foundation</h2>
+                <p className="subtitle">Graduate and upper-level coursework aligned with systems, scale, data, and AI roles.</p>
+            </div>
             <Swiper 
                 slidesPerView={1} 
                 breakpoints={{
@@ -70,11 +73,11 @@ const Reviews = () => {
                 pagination={{
                     clickable: true
                 }}
-                className={`h-[350px] ${theme === 'dark' ? 'dark-slider-bullets' : ''}`}
+                className={`h-[380px] ${theme === 'dark' ? 'dark-slider-bullets' : ''}`}
             >
                 {reviewsData.map((person, index)=>{
                     return <SwiperSlide key={index}>
-                        <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
+                        <Card className="min-h-[330px] border-border/70 bg-background/80 p-7 shadow-sm">
                             <CardHeader className="p-0 mb-4">
                                 <div className="flex items-center gap-x-4">
                                     <Image 
@@ -91,7 +94,7 @@ const Reviews = () => {
                                     </div>
                                 </div>
                             </CardHeader>
-                            <CardDescription className="text-md text-muted-foreground">
+                            <CardDescription className="text-sm leading-relaxed text-muted-foreground">
                                 {person.review}
                             </CardDescription>
                         </Card>

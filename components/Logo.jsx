@@ -5,7 +5,7 @@ import '../app/globals.css'
 
 const Logo = () => {
   return (
-    <Link href="/" style={{ fontSize: "22px", display: "flex" }}>
+    <Link href="/home" style={{ fontSize: "22px", display: "flex" }}>
       <div style={{ display: "flex", alignItems: "center" }}>
         <div>
           <FaCode style={{ marginRight: "5px" }} />

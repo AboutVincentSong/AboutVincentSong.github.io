@@ -65,12 +65,12 @@ const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="relative mb-12 xl:mb-48">
+    <section className="relative py-16 xl:py-20">
       <div className="container mx-auto">
-        <div className="max-w-[600px] mx-auto text-center mb-12 flex flex-col justify-center items-center">
-          <h2 className="section-title mb-4"><ChevronRightCircle />Latest Projects</h2>
+        <div className="max-w-[680px] mx-auto text-center mb-12 flex flex-col justify-center items-center">
+          <h2 className="section-title mb-4"><ChevronRightCircle />Featured Work</h2>
           <p className="subtitle mb-8">
-            These are my most recent projects from personal experience, school, work, and clubs. Each project emphasizes my capacity to innovate, address challenges, and excel through teamwork.
+            Selected projects that show backend depth, production-style infrastructure, collaboration, and full-stack delivery.
           </p>
           <Link href='/projects'>
             <Button>All projects</Button>
@@ -79,7 +79,7 @@ const Work = () => {
 
         <div className="xl:w-[1200px] mx-auto">
           <Swiper 
-            className={`h-[480px] ${theme === 'dark' ? 'dark-slider-bullets' : ''}`}
+            className={`h-[500px] ${theme === 'dark' ? 'dark-slider-bullets' : ''}`}
             slidesPerView={1} 
             breakpoints={{ 640: { slidesPerView: 2 }}} 
             spaceBetween={30} 

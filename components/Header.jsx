@@ -21,9 +21,9 @@ const Header = () => {
   return (
     <header className={`${
               header 
-                ? 'py-4 white shadow-md dark:bg-accent' 
-                : 'py-4 white shadow-md dark:bg-transparent'
-              } sticky top-0 z-30 transition-all bg-white`}
+                ? 'py-3 border-b border-border/60 bg-background/70 shadow-sm backdrop-blur-xl' 
+                : 'py-4 border-b-0 bg-transparent shadow-none'
+              } fixed inset-x-0 top-0 z-30 transition-all`}
     >
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
