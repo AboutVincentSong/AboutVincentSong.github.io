@@ -272,6 +272,7 @@ const About = () => {
                                                                 alt={iconObj.label}
                                                                 width={40}
                                                                 height={40}
+                                                                className="h-10 w-10 object-contain"
                                                                 priority
                                                                 />
                                                             </div>

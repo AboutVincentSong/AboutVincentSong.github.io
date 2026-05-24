@@ -12,7 +12,7 @@ export const ProjectCardWithTech = ({ project }) => {
           <Image 
             className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg transform transition-transform duration-300 group-hover:scale-105" 
             src={project.image} 
-            layout="fill" 
+            fill
             alt={project.name} 
             priority 
           />
@@ -48,7 +48,7 @@ export const ProjectCardWithTech = ({ project }) => {
           <div className="flex flex-wrap gap-2 mt-4">
             {project.techStack.map((tech, index) => (
               <div key={index} className="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-md">
-                <Image src={tech.src} alt={tech.label} width={20} height={20} />
+                <Image src={tech.src} alt={tech.label} width={20} height={20} className="h-5 w-5 object-contain" />
                 <span className="text-xs font-medium">{tech.label}</span>
               </div>
             ))}

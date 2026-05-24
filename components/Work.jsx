@@ -9,7 +9,7 @@ import { Pagination } from 'swiper/modules';
 import ProjectCard from '@/components/ProjectCard';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
-import { Dialog, DialogContent } from './ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from './ui/dialog';
 
 const projectData = [
     {
@@ -100,6 +100,10 @@ const Work = () => {
       {selectedImage && (
         <Dialog open={true} onOpenChange={() => setSelectedImage(null)}>
           <DialogContent className="bg-transparent shadow-none max-w-[90vw] max-h-[90vh] p-0 flex justify-center items-center">
+            <DialogTitle className="sr-only">Project preview</DialogTitle>
+            <DialogDescription className="sr-only">
+              Enlarged preview image for the selected project.
+            </DialogDescription>
             <img src={selectedImage} alt="Enlarged project" className="rounded-lg max-h-full max-w-full object-contain" />
           </DialogContent>
         </Dialog>

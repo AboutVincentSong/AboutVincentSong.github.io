@@ -4,7 +4,7 @@ import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
 import { useTheme } from 'next-themes';
 import { ChevronRightCircle } from 'lucide-react';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 const projectData = [
   {
@@ -144,6 +144,10 @@ const Projects = () => {
                     </div>
                   </DialogTrigger>
                   <DialogContent className="max-w-6xl p-6 rounded-xl shadow-2xl bg-white dark:bg-gray-900">
+                    <DialogTitle className="sr-only">{project.name} preview</DialogTitle>
+                    <DialogDescription className="sr-only">
+                      Enlarged preview image for {project.name}.
+                    </DialogDescription>
                     <div className="w-full h-[85vh] flex items-center justify-center overflow-auto">
                       <img
                         src={project.image}
