@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <section className='relative overflow-hidden pb-14 pt-24 xl:pb-20 xl:pt-28'>
-      <div className='absolute inset-0 -z-10'>
+      <div className='absolute inset-0 -z-10 hidden dark:block'>
         <div className='absolute top-[-140px] left-1/2 -translate-x-1/2 w-[760px] h-[760px] bg-primary/10 blur-3xl rounded-full' />
         <div className='absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent' />
       </div>
