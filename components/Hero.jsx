@@ -23,13 +23,6 @@ const Hero = () => {
 
       <div className='container mx-auto'>
         <div className='mx-auto flex w-full max-w-[820px] flex-col items-center text-center'>
-            <div className='inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 mb-4'>
-              <span className='status-blink h-2 w-2 rounded-full bg-green-500 mr-2' />
-              <span className='text-sm font-medium tracking-wide text-muted-foreground'>
-                Incoming SWE @ Nodal Exchange | UVA M.C.S.
-              </span>
-            </div>
-
             <h1 className='text-5xl md:text-7xl font-bold tracking-tight mb-5'>
               Hi, I&apos;m{' '}
               <span className='bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent'>
@@ -37,18 +30,14 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className='text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[720px] mx-auto mb-6'>
+            <p className='text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[720px] mx-auto mb-4'>
               Software engineer building backend systems, distributed applications,
               and AI-powered products with production-minded engineering discipline.
             </p>
 
             <div className='relative flex justify-center mb-7'>
-              <div className='absolute inset-0 flex justify-center'>
-                <div className='w-[190px] h-[190px] rounded-full bg-primary/20 blur-3xl' />
-              </div>
-
               <DevImg
-                containerStyles='relative w-[170px] h-[170px] rounded-full overflow-hidden border-4 border-white/10 shadow-2xl'
+                containerStyles='relative w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-white/10 shadow-2xl'
                 imgSrc='/hero/developer.png'
               />
             </div>
