@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-import { User2, MailIcon, PhoneCall, GraduationCap, MapPin, Briefcase, ChevronRightCircle, } from 'lucide-react';
+import { Landmark, MailIcon, PhoneCall, GraduationCap, MapPin, Briefcase, ChevronRightCircle, } from 'lucide-react';
 
 const infoData = [
     {
-        icon: <User2 size={20} />,
-        text: 'Vincent Song',
+        icon: <Landmark size={20} />,
+        text: 'United States Citizen',
     },
     {
         icon: <PhoneCall size={20} />,
-        text: '(571)-296-4933',
+        text: '+1 (571) 296-4933',
     },
     {
         icon: <MailIcon size={20} />,
@@ -20,7 +20,7 @@ const infoData = [
     },
     {
         icon: <MapPin size={20} />,
-        text: 'Burke, Virginia, USA',
+        text: 'Washington, DC Metro Area',
     },
     {
         icon: <GraduationCap size={20} />,
@@ -28,7 +28,7 @@ const infoData = [
     },
     {
         icon: <Briefcase size={20} />,
-        text: 'Incoming SWE @ Nodal Exchange',
+        text: 'Software Engineer, Nodal Exchange',
     },
 ]
 
@@ -172,7 +172,7 @@ const About = () => {
         return arr.find((item)=> item.title === title);
     };
     return (
-        <section id='about' className='relative scroll-mt-16 py-16 xl:py-20'>
+        <section id='about' className=' py-10'>
             <div className="container mx-auto">
                 <div className="mx-auto mb-10 max-w-[760px] text-center">
                     <h2 className="section-title mb-4 text-center mx-auto">
