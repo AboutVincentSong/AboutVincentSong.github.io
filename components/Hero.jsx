@@ -11,7 +11,20 @@ import Socials from './Socials';
 
 const Hero = () => {
   const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    const about = document.getElementById('about');
+
+    if (!about) return;
+
+    const top =
+      about.getBoundingClientRect().top +
+      window.scrollY -
+      (window.innerHeight - about.offsetHeight) / 2 -
+      25;
+
+    window.scrollTo({
+      top,
+      behavior: 'smooth',
+    });
   };
 
   return (
